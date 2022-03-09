@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ReverseTheArray {
+    /**
+     * Reverses a given string without using StringBuilder's reverse method.
+     * */
     public static String reverse(String givenString){
         String[] str2Arr = givenString.split("");
         String[] strArray = (String[]) getReversed(str2Arr);
@@ -17,10 +20,18 @@ public class ReverseTheArray {
         return stringBuilder.toString();
     }
 
+    /**
+     * Reverses an array of Objects.
+     * Objects can hold any data type, so for keeping it generic used Objects.
+     * */
     public static Object[] reverse(Object[] givenArray){
         return getReversed(givenArray);
     }
 
+    /**
+     * Reverses a List of Objects.
+     * Objects can hold any data type, so for keeping it generic used Objects.
+     * */
     public static List<Object> reverse(ArrayList<Object> givenList){
         return Arrays.asList(getReversed(givenList.toArray()));
     }
