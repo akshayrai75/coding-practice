@@ -56,7 +56,7 @@ public class Main {
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
         System.out.println("");
         try {
-            SortArrayWithoutSort.sort_0_1_2_array(givenArr);
+            SortArrayWithoutSort.sort_0_1_2_arrayMethod_1(givenArr);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -68,7 +68,7 @@ public class Main {
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
         System.out.println("");
         try {
-            SortArrayWithoutSort.sort_0_1_2_array(givenArr);
+            SortArrayWithoutSort.sort_0_1_2_arrayMethod_1(givenArr);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -80,7 +80,7 @@ public class Main {
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
         System.out.println("");
         try {
-            SortArrayWithoutSort.sort_0_1_2_array(givenArr);
+            SortArrayWithoutSort.sort_0_1_2_arrayMethod_1(givenArr);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -93,7 +93,7 @@ public class Main {
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
 
         try {
-            SortArrayWithoutSort.sort_0_1_2_array(givenArr);
+            SortArrayWithoutSort.sort_0_1_2_arrayMethod_1(givenArr);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -106,12 +106,28 @@ public class Main {
         givenArr= new int[]{0, 1, 1, 0, 1, 2, 4, 1, 2, 0, 0, 5, 0, 1};
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
         try {
-            SortArrayWithoutSort.sort_0_1_2_array(givenArr);
+            SortArrayWithoutSort.sort_0_1_2_arrayMethod_1(givenArr);
         } catch (Exception e) {
             System.out.println("\n"+e.getMessage());
         }
         System.out.print("Sorted: ");
         Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
+
+        System.out.println("");
+        System.out.print("Given Array for method 2-> ");
+        Integer [] givenArr2= {0, 1, 2, 0, 1, 2, 1, 2, 0, 0, 1, 2, 0, 1, 2, 0, 1, 2, 1, 2, 0, 0, 1, 2, 0, 1, 2, 0, 1, 2, 1, 2, 0, 0, 1, 2};;
+        Arrays.stream(givenArr2).forEach(num -> System.out.print(num + ", "));
+        givenArr2 = SortArrayWithoutSort.sort_0_1_2_arrayMethod_2(givenArr2);
+        System.out.print("\nSorted: ");
+        Arrays.stream(givenArr2).forEach(num -> System.out.print(num + ", "));
+
+        System.out.println("");
+        System.out.print("Given Array with unknowns for method 2-> ");
+        givenArr2= new Integer[]{0, 1, 1, 0, 10, 2, 4, 1, 2, 0, 0, 5, 0, 1};
+        Arrays.stream(givenArr2).forEach(num -> System.out.print(num + ", "));
+        givenArr2 = SortArrayWithoutSort.sort_0_1_2_arrayMethod_2(givenArr2);
+        System.out.print("\nSorted: ");
+        Arrays.stream(givenArr2).forEach(num -> System.out.print(num + ", "));
         System.out.println("\n------------------------------------------------");
     }
 
