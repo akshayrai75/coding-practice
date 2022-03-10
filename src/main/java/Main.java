@@ -1,5 +1,6 @@
 import arrays.MinMaxFromArray;
 import arrays.ReverseTheArray;
+import arrays.SeparatePositiveNegative;
 import arrays.SortArrayWithoutSort;
 
 import java.util.Arrays;
@@ -131,10 +132,28 @@ public class Main {
         System.out.println("\n------------------------------------------------");
     }
 
+    private static void separateNegativeAndPositive() {
+        System.out.println("\nSeparate -ve & +ve in the array");
+        double[] givenArr = { -1, 2, -3, 4, 5, 6, -7, 8, 9 };
+        System.out.print("Give arr: ");
+        Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
+        System.out.println("-> ");
+
+        SeparatePositiveNegative.separate(givenArr);
+        System.out.print("Rearranged arr: ");
+        Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
+
+        givenArr = new double[]{};
+        System.out.print("\nEmpty arr: ->");
+        Arrays.stream(givenArr).forEach(num -> System.out.print(num + ", "));
+        System.out.println("\n------------------------------------------------");
+    }
+
     public static void main(String[] args) {
         reverseTheArrayTest();
         minMaxFromAnArr();
         k_th_minMaxFromAnArr();
         sort_0s_1s_2s_arr();
+        separateNegativeAndPositive();
     }
 }
