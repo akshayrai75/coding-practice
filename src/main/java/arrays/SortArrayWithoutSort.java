@@ -7,8 +7,8 @@ public class SortArrayWithoutSort {
         int arrLen = arrayOf_0_1_2.length;
         if (arrLen > 0) {
             int low = 0, mid = 0, high = arrLen - 1;
-            for (int i = 0; i <= high; i++) {
-                switch (arrayOf_0_1_2[i]) {
+            while (mid <= high) {
+                switch (arrayOf_0_1_2[mid]) {
                     case 0:
                         swapArrElements(arrayOf_0_1_2, low, mid);
                         mid++;
