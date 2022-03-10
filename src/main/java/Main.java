@@ -1,7 +1,4 @@
-import arrays.MinMaxFromArray;
-import arrays.ReverseTheArray;
-import arrays.SeparatePositiveNegative;
-import arrays.SortArrayWithoutSort;
+import arrays.*;
 
 import java.util.Arrays;
 
@@ -149,11 +146,51 @@ public class Main {
         System.out.println("\n------------------------------------------------");
     }
 
+    private static void unionAndIntersectionOfArrays() {
+        System.out.println("\nUnion And Intersection Of Arrays");
+        Integer[] givenArr_1 = { -1, 2, -3, 4, 5, 6, -7, 8, 9 };
+        Integer[] givenArr_2 = { -1, 2, -3, 4, 5, 6, -7, 8, 9 };
+        System.out.print("Give arrays: ");
+        Arrays.stream(givenArr_1).forEach(num -> System.out.print(num + ", "));
+        System.out.println("");
+        Arrays.stream(givenArr_2).forEach(num -> System.out.print(num + ", "));
+        System.out.println("\n-> ");
+
+        FindUnionAndIntersection findUnionAndIntersection = new FindUnionAndIntersection(givenArr_1, givenArr_2);
+        System.out.print("Union arr: ");
+        Arrays.stream(findUnionAndIntersection.getUnionOfArray()).forEach(num -> System.out.print(num + ", "));
+        System.out.print("\nIntersection arr: ");
+        Arrays.stream(findUnionAndIntersection.getIntersectionOfArray()).forEach(num -> System.out.print(num + ", "));
+
+
+        givenArr_1 = new Integer[] {1, 3, 4, 5, 7};
+        givenArr_2 = new Integer[] {2, 3, 5, 6};
+        System.out.print("\nGive arrays: ");
+        Arrays.stream(givenArr_1).forEach(num -> System.out.print(num + ", "));
+        System.out.println("");
+        Arrays.stream(givenArr_2).forEach(num -> System.out.print(num + ", "));
+        System.out.println("\n-> ");
+
+        findUnionAndIntersection = new FindUnionAndIntersection(givenArr_1, givenArr_2);
+        System.out.print("Union arr: ");
+        Arrays.stream(findUnionAndIntersection.getUnionOfArray()).forEach(num -> System.out.print(num + ", "));
+        System.out.print("\nIntersection arr: ");
+        Arrays.stream(findUnionAndIntersection.getIntersectionOfArray()).forEach(num -> System.out.print(num + ", "));
+
+        findUnionAndIntersection = new FindUnionAndIntersection();
+        System.out.print("\n\nEmpty Union arr: -> ");
+        Arrays.stream(findUnionAndIntersection.getUnionOfArray()).forEach(num -> System.out.print(num + ", "));
+        System.out.print("\nEmpty Intersection arr: -> ");
+        Arrays.stream(findUnionAndIntersection.getIntersectionOfArray()).forEach(num -> System.out.print(num + ", "));
+        System.out.println("\n------------------------------------------------");
+    }
+
     public static void main(String[] args) {
         reverseTheArrayTest();
         minMaxFromAnArr();
         k_th_minMaxFromAnArr();
         sort_0s_1s_2s_arr();
         separateNegativeAndPositive();
+        unionAndIntersectionOfArrays();
     }
 }
