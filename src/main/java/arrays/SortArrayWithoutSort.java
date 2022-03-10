@@ -10,30 +10,16 @@ public class SortArrayWithoutSort {
             for (int i = 0; i <= high; i++) {
                 switch (arrayOf_0_1_2[i]) {
                     case 0:
-                        swapArrElements(arrayOf_0_1_2, low, i);
-                        if (mid == low) mid++;
+                        swapArrElements(arrayOf_0_1_2, low, mid);
+                        mid++;
                         low++;
                         break;
                     case 1:
-                        swapArrElements(arrayOf_0_1_2, mid, i);
                         mid++;
                         break;
                     case 2:
-                        swapArrElements(arrayOf_0_1_2, i, high);
+                        swapArrElements(arrayOf_0_1_2, mid, high);
                         high--;
-                        if (arrayOf_0_1_2[i] == 0) {
-                            swapArrElements(arrayOf_0_1_2, low, i);
-                            if (mid == low) mid++;
-                            low++;
-                        }
-                        if (arrayOf_0_1_2[i] == 1) {
-                            swapArrElements(arrayOf_0_1_2, mid, i);
-                            mid++;
-                        }
-                        if (arrayOf_0_1_2[i] == 2) {
-                            swapArrElements(arrayOf_0_1_2, i, high);
-                            high--;
-                        }
                         break;
                     default:
                         throw new Exception("Sorting aborted midway as unknown value occurred in the array. Allowed values are 0, 1 and 2 only.");
