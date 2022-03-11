@@ -185,6 +185,28 @@ public class Main {
         System.out.println("\n------------------------------------------------");
     }
 
+    private static void cyclicRotateByOneOfArr () {
+        System.out.println("\nCyclic rotate by one of an array");
+        Number[] numArr = {9, 8, 7, 6, 4, 2, 1, 3};
+        System.out.println("Given Arr: ");
+        Arrays.stream(numArr).forEach(num -> System.out.print(num + ", "));
+        System.out.println("-> ");
+        System.out.println("\nOutput: ");
+        CyclicRotateByOne.rotate(numArr);
+        Arrays.stream(numArr).forEach(num -> System.out.print(num + ", "));
+
+
+        String[]strArr = {"One", "Two", "Three", "Last"};
+        System.out.println("\n\nGiven Str Arr: ");
+        Arrays.stream(strArr).forEach(num -> System.out.print(num + ", "));
+        System.out.println("-> ");
+        System.out.println("\nOutput: ");
+        CyclicRotateByOne.rotate(strArr);
+        Arrays.stream(strArr).forEach(num -> System.out.print(num + ", "));
+        System.out.println("");
+        System.out.println("------------------------------------------------");
+    }
+
     public static void main(String[] args) {
         reverseTheArrayTest();
         minMaxFromAnArr();
@@ -192,5 +214,6 @@ public class Main {
         sort_0s_1s_2s_arr();
         separateNegativeAndPositive();
         unionAndIntersectionOfArrays();
+        cyclicRotateByOneOfArr();
     }
 }
