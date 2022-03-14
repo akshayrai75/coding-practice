@@ -207,6 +207,17 @@ public class Main {
         System.out.println("------------------------------------------------");
     }
 
+    private static void maxSumInContiArr () {
+        double givenArr[] = {-2, -3, 4, -1, -2, 1, 5, -3};
+        Arrays.stream(givenArr).forEach(num -> System.out.println(num + ", "));
+        System.out.println("\nMaximum contiguous sum is: "
+                + MaxSumInContinuousArray.getMaxSum(givenArr));
+        System.out.println("\nMaximum contiguous sum in Empty Arr is: "
+                + MaxSumInContinuousArray.getMaxSum(new double[]{}));
+        System.out.println("");
+        System.out.println("------------------------------------------------");
+    }
+
     public static void main(String[] args) {
         reverseTheArrayTest();
         minMaxFromAnArr();
@@ -215,5 +226,6 @@ public class Main {
         separateNegativeAndPositive();
         unionAndIntersectionOfArrays();
         cyclicRotateByOneOfArr();
+        maxSumInContiArr();
     }
 }
