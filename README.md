@@ -10,3 +10,7 @@ This is a work in progress as I have just started this activity. Will try to act
 - Sort array consisting of only 0, 1 and 2.<br />
 - Move all the negative elements to one side of the array.<br />
 - Write a program to cyclically rotate an array by one.<br />
+
+<h3>LeetCode - Easy</h3>
+- Palindrome number (without converting to String)
+- Roman to Integer
