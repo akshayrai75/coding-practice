@@ -12,5 +12,5 @@ This is a work in progress as I have just started this activity. Will try to act
 - Write a program to cyclically rotate an array by one.<br />
 
 <h3>LeetCode - Easy</h3>
-- Palindrome number (without converting to String)
-- Roman to Integer
+- Palindrome number (without converting to String) <br />
+- Roman to Integer <br />
