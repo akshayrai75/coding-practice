@@ -14,3 +14,4 @@ This is a work in progress as I have just started this activity. Will try to act
 <h3>LeetCode - Easy</h3>
 - Palindrome number (without converting to String) <br />
 - Roman to Integer <br />
+- Longest Common Prefix <br />
