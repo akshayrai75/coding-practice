@@ -1,10 +1,9 @@
-import easy.LongestCommonPrefix;
-import easy.RomanToInteger;
+import easy.ValidateParentheses;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println(
-                LongestCommonPrefix.longestCommonPrefix(new String[]{"flower","flow","flight"})
+                ValidateParentheses.isValid("()[]{}")
         );
     }
 }
