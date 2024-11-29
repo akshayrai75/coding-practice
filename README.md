@@ -18,3 +18,4 @@ This is a work in progress as I have just started this activity. Will try to act
 - Valid Parentheses <br />
 - Merge two sorted linked list <br />
 - Remove Duplicates from Sorted Array <br />
+- Remove Element <br />
