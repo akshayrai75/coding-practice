@@ -9,14 +9,14 @@ public class LongestCommonPrefix {
     /**
      Problem:
      Write a function to find the longest common prefix string amongst an array of strings.
-     If there is no common prefix, return an empty string "".<br />
-        Example 1:<br />
-        Input: strs = ["flower","flow","flight"]<br />
-        Output: "fl"<br /><br />
+     If there is no common prefix, return an empty string "".<br>
+        @Example-1:
+        Input: strs = ["flower","flow","flight"]<br>
+        Output: "fl"<br>
 
-        Example 2:<br />
-        Input: strs = ["dog","racecar","car"]<br />
-        Output: ""<br />
+        @Example-2:
+        Input: strs = ["dog","racecar","car"]<br>
+        Output: ""<br>
         Explanation: There is no common prefix amongst the input strings.
      */
     public static String longestCommonPrefix(String[] strs) {

@@ -10,17 +10,17 @@ public class ValidateParentheses {
      An input string is valid if:<br>
      1. Open brackets must be closed by the same type of brackets.<br>
      2. Open brackets must be closed in the correct order.<br>
-     3. Every close bracket has a corresponding open bracket of the same type.<br><br>
-     Example 1:<br>
+     3. Every close bracket has a corresponding open bracket of the same type.<br>
+     @Example 1:
      Input: s = "()"<br>
-     Output: true<br><br>
-     Example 2:<br>
+     Output: true<br>
+     @Example 2:
      Input: s = "()[]{}"<br>
-     Output: true<br><br>
-     Example 3:<br>
+     Output: true<br>
+     @Example 3:
      Input: s = "(]"<br>
-     Output: false<br><br>
-     Example 4:<br>
+     Output: false<br>
+     @Example 4:
      Input: s = "([])"<br>
      Output: true<br>
      * */

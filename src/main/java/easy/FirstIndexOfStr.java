@@ -3,19 +3,19 @@ package easy;
 public class FirstIndexOfStr {
     /**
      * Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if
-     * needle is not part of haystack.<br /><br />
-     * Example 1:<br />
-     * Input: haystack = "sadbutsad", needle = "sad"<br />
-     * Output: 0<br />
+     * needle is not part of haystack.<br>
+     * @Example-1:
+     * Input: haystack = "sadbutsad", needle = "sad"<br>
+     * Output: 0<br>
      * Explanation: "sad" occurs at index 0 and 6.
-     * The first occurrence is at index 0, so we return 0.<br /><br />
-     * Example 2:<br />
-     * Input: haystack = "leetcode", needle = "leeto"<br />
-     * Output: -1<br />
-     * Explanation: "leeto" did not occur in "leetcode", so we return -1.<br /><br />
-     * Constraints:<br />
-     * 1 <= haystack.length, needle.length <= 104<br />
-     * haystack and needle consist of only lowercase English characters.<br />
+     * The first occurrence is at index 0, so we return 0.<br>
+     * @Example-2:
+     * Input: haystack = "leetcode", needle = "leeto"<br>
+     * Output: -1<br>
+     * Explanation: "leeto" did not occur in "leetcode", so we return -1.<br>
+     * @Constraints:
+     * 1 <= haystack.length, needle.length <= 104<br>
+     * haystack and needle consist of only lowercase English characters.<br>
      * */
     public static int strStr(String haystack, String needle) {
         // Use of inbuilt library and beats 100%

@@ -20,3 +20,4 @@ This is a work in progress as I have just started this activity. Will try to act
 - Remove Duplicates from Sorted Array <br />
 - Remove Element <br />
 - Find the Index of the First Occurrence in a String <br />
+- Search Insert Position <br />
