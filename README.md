@@ -21,3 +21,4 @@ This is a work in progress as I have just started this activity. Will try to act
 - Remove Element <br />
 - Find the Index of the First Occurrence in a String <br />
 - Search Insert Position <br />
+- Length of last word <br />
