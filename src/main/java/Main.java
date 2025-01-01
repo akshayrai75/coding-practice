@@ -1,21 +1,16 @@
+import easy.AddBinary;
 import easy.PlusOne;
 
 public class Main {
     public static void main(String[] args) {
-        int[] test1 = PlusOne.plusOne(new int[]{1,2,3});
-        for (int i: test1) System.out.print(i);
-        System.out.println();
-        int[] test2 = PlusOne.plusOne(new int[]{4,3,2,1});
-        for (int i: test2) System.out.print(i);
-        System.out.println();
-        int[] test3 = PlusOne.plusOne(new int[]{9});
-        for (int i: test3) System.out.print(i);
-        System.out.println();
-        int[] test4 = PlusOne.plusOne(new int[]{0});
-        for (int i: test4) System.out.print(i);
-        System.out.println();
-        int[] test5 = PlusOne.plusOne(new int[]{9,9,9,9});
-        for (int i: test5) System.out.print(i);
-        System.out.println();
+        System.out.println(AddBinary.addBinary("11","1"));
+        System.out.println(AddBinary.addBinary("1010","1011"));
+        System.out.println(AddBinary.addBinary("111111","1"));
+        System.out.println(AddBinary.addBinary("110111","1"));
+        System.out.println(AddBinary.addBinary("00111","1"));
+        System.out.println(AddBinary.addBinary("00","1"));
+        System.out.println(AddBinary.addBinary("100","1"));
+        System.out.println(AddBinary.addBinary("1000","100"));
+        System.out.println(AddBinary.addBinary("100","100"));
     }
 }

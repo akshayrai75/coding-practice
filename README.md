@@ -23,3 +23,4 @@ This is a work in progress as I have just started this activity. Will try to act
 - Search Insert Position <br />
 - Length of last word <br />
 - Plus One <br />
+- Add Binary <br />
