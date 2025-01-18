@@ -11,7 +11,6 @@ public class RemoveDuplicatesFromLL {
      * Output: [1,2]<br>
      * @Example-2: Input: head = [1,1,2,3,3]<br>
      * Output: [1,2,3]<br>
-     *
      * */
     public static ListNode deleteDuplicates(ListNode head) {
         // This is two pointer approach and beats 100% in TC and 53.44% in SC
