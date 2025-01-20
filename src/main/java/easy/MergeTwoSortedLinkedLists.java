@@ -1,6 +1,8 @@
-package easy.mergeTwoSortedList;
+package easy;
 
-public class MergeTwoSortedLists {
+import easy.nodes.ListNode;
+
+public class MergeTwoSortedLinkedLists {
 
     public static ListNode mergeTwoListsV2(ListNode list1, ListNode list2) {
         if (list1==null && list2==null) return null;

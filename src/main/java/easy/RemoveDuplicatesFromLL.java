@@ -1,6 +1,6 @@
 package easy;
 
-import easy.mergeTwoSortedList.ListNode;
+import easy.nodes.ListNode;
 
 public class RemoveDuplicatesFromLL {
     /**
