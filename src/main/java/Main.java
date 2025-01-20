@@ -1,31 +1,34 @@
-import easy.ClaculateSqrt;
-import easy.ClimbingStairs;
-import easy.RemoveDuplicatesFromLL;
-import easy.mergeTwoSortedList.ListNode;
+import easy.MergeSortedArray;
 
 public class Main {
     public static void main(String[] args) {
-        ListNode test1 = new ListNode(1, new ListNode(1, new ListNode(2)));
-        ListNode test2 = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3)))));
-        ListNode test3 = null;
-
-        test1 = RemoveDuplicatesFromLL.deleteDuplicates(test1);
-        test2 = RemoveDuplicatesFromLL.deleteDuplicates(test2);
-        test3 = RemoveDuplicatesFromLL.deleteDuplicates(null);
-
-        while (test1 != null) {
-            System.out.print(test1.val + " ");
-            test1 = test1.next;
-        }
+        int[] test1Num1 = new int[]{1,2,3,0,0,0};
+        int[] test1Num2 = new int[]{2,5,6};
+        MergeSortedArray.merge(test1Num1, 3, test1Num2, 3);
+        for (int i : test1Num1) System.out.print(i + " ");
         System.out.println();
-        while (test2 != null) {
-            System.out.print(test2.val + " ");
-            test2 = test2.next;
-        }
+
+        int[] test2Num1 = new int[]{1};
+        int[] test2Num2 = new int[0];
+        MergeSortedArray.merge(test2Num1, 1, test2Num2, 0);
+        for (int i : test2Num1) System.out.print(i + " ");
         System.out.println();
-        while (test3 != null) {
-            System.out.print(test3.val + " ");
-            test3 = test3.next;
-        }
+
+        int[] test3Num1 = new int[]{0};
+        int[] test3Num2 = new int[]{1};
+        MergeSortedArray.merge(test3Num1, 0, test3Num2, 1);
+        for (int i : test3Num1) System.out.print(i + " ");
+        System.out.println();
+
+        int[] test4Num1 = new int[]{2,0};
+        int[] test4Num2 = new int[]{1};
+        MergeSortedArray.merge(test4Num1, 1, test4Num2, 1);
+        for (int i : test4Num1) System.out.print(i + " ");
+        System.out.println();
+
+        int[] test5Num1 = new int[]{4, 0, 0, 0, 0, 0};
+        int[] test5Num2 = new int[]{1,2,3,5,6};
+        MergeSortedArray.merge(test5Num1, 1, test5Num2, 5);
+        for (int i : test5Num1) System.out.print(i + " ");
     }
 }
