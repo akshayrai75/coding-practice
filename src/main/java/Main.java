@@ -1,3 +1,4 @@
+import easy.MaxDepthBinaryTree;
 import easy.SymmetricTree;
 import easy.nodes.TreeNode;
 
@@ -43,14 +44,14 @@ public class Main {
                         new TreeNode(4, new TreeNode(2), null))
         );
 
-        System.out.println(SymmetricTree.isSymmetric(testRoot1));
-        System.out.println(SymmetricTree.isSymmetric(testRoot2));
-        System.out.println(SymmetricTree.isSymmetric(testRoot3));
-        System.out.println(SymmetricTree.isSymmetric(testRoot4));
-        System.out.println(SymmetricTree.isSymmetric(testRoot5));
-        System.out.println(SymmetricTree.isSymmetric(testRoot6));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot1));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot2));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot3));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot4));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot5));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot6));
 
-        System.out.println(SymmetricTree.isSymmetric(testRoot7));
-        System.out.println(SymmetricTree.isSymmetric(testRoot8));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot7));
+        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot8));
     }
 }
