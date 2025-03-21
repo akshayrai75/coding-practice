@@ -1,57 +1,22 @@
+import easy.ConvertSortedArrToBinarySearchTree;
 import easy.MaxDepthBinaryTree;
 import easy.SymmetricTree;
 import easy.nodes.TreeNode;
+import util.PrintTree;
 
 public class Main {
     public static void main(String[] args) {
-        TreeNode testRoot1 = new TreeNode(1, new TreeNode(2), new TreeNode(2));
-        TreeNode testRoot2 = new TreeNode(1,
-                new TreeNode(2,
-                        new TreeNode(3),
-                        new TreeNode(4)
-                        ),
-                new TreeNode(2,
-                        new TreeNode(4),
-                        new TreeNode(3)
-                        )
-        );
-        TreeNode testRoot3 = new TreeNode(1,
-                new TreeNode(2,null, new TreeNode(2)),
-                new TreeNode(2,null, new TreeNode(2))
-        );
-        TreeNode testRoot4 = new TreeNode(1,
-                new TreeNode(2, new TreeNode(3), null),
-                new TreeNode(2, new TreeNode(3), null)
-        );
-        TreeNode testRoot5 = null;
-        TreeNode testRoot6 = new TreeNode(0);
+        int[] test1 = new int[]{-10,-3,0,5,9};
+        TreeNode tree1 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test1);
+        int[] test2 = new int[]{1,3};
+        TreeNode tree2 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test2);
+        int[] test3 = new int[]{1,1,1,1,1,1,1,1,1};
+        TreeNode tree3 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test3);
 
-        TreeNode testRoot7 = new TreeNode(2,
-                new TreeNode(3,
-                        new TreeNode(4),
-                        new TreeNode(5, new TreeNode(8), new TreeNode(9))),
-                new TreeNode(3,
-                        new TreeNode(5, new TreeNode(9), new TreeNode(8)),
-                        new TreeNode(4))
-        );
-
-        TreeNode testRoot8 = new TreeNode(5,
-                new TreeNode(4,
-                        null,
-                        new TreeNode(1, new TreeNode(2), null)),
-                new TreeNode(1,
-                         null,
-                        new TreeNode(4, new TreeNode(2), null))
-        );
-
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot1));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot2));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot3));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot4));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot5));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot6));
-
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot7));
-        System.out.println(MaxDepthBinaryTree.maxDepth(testRoot8));
+        PrintTree.printInOrder(tree1);
+        System.out.println();
+        PrintTree.printInOrder(tree2);
+        System.out.println();
+        PrintTree.printInOrder(tree3);
     }
 }
