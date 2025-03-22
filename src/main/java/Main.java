@@ -1,22 +1,29 @@
-import easy.ConvertSortedArrToBinarySearchTree;
-import easy.MaxDepthBinaryTree;
-import easy.SymmetricTree;
-import easy.nodes.TreeNode;
-import util.PrintTree;
+import easy.RemoveDuplicatesfromSortedArrayII;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] test1 = new int[]{-10,-3,0,5,9};
-        TreeNode tree1 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test1);
-        int[] test2 = new int[]{1,3};
-        TreeNode tree2 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test2);
+        int[] test1 = new int[]{1,1,1,2,2,3};
+        int ans1= RemoveDuplicatesfromSortedArrayII.removeDuplicates(test1);
+        int[] test2 = new int[]{0,0,1,1,1,1,2,3,3};
+        int ans2=RemoveDuplicatesfromSortedArrayII.removeDuplicates(test2);
         int[] test3 = new int[]{1,1,1,1,1,1,1,1,1};
-        TreeNode tree3 = ConvertSortedArrToBinarySearchTree.sortedArrayToBST(test3);
+        int ans3=RemoveDuplicatesfromSortedArrayII.removeDuplicates(test3);
+        int[] test4 = new int[]{1,2,3,4,5};
+        int ans4=RemoveDuplicatesfromSortedArrayII.removeDuplicates(test4);
 
-        PrintTree.printInOrder(tree1);
+        System.out.println(ans1);
+        System.out.println(ans2);
+        System.out.println(ans3);
+        System.out.println(ans4);
+
+        Arrays.stream(test1).forEach(ints -> System.out.print(ints + ", "));
         System.out.println();
-        PrintTree.printInOrder(tree2);
+        Arrays.stream(test2).forEach(ints -> System.out.print(ints + ", "));
         System.out.println();
-        PrintTree.printInOrder(tree3);
+        Arrays.stream(test3).forEach(ints -> System.out.print(ints + ", "));
+        System.out.println();
+        Arrays.stream(test4).forEach(ints -> System.out.print(ints + ", "));
     }
 }
